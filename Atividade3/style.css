@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba( 0,0,0,0.5)) , url(img/banner.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+}
+
+header nav {
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items:flex-end;
+}
+
+header nav label {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a { 
+    text-decoration: none;
+    color:rgba( 255,255,255,0.8);
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a:hover {
+    color:rgba( 255,255,255,1);
+}
+
+@media (max-width: 900px ) {
+    header nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+
+    header nav h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    header nav p {
+        font-size: 18px;
+        padding: 0;
+    }
+}
+
+header nav h4 {
+    font-size: 25px;
+    color: rgba( 255,255,255,0.8);
+}
+
+header nav p {
+    color: rgba( 255,255,255,0.8);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: rgba( 255,255,255,0.8);
+    font-weight: 500;
+}
+
+@media (max-width: 900px ) {
+header h1 {
+    font-size: 1.3rem;
+} 
+}
+
+header form {
+    background-color: rgb(197, 28, 28);
+    margin: 50px 115px 10px;
+    max-width: 45%;
+    width: 100%;
+    box-shadow: -1px -1px 1px white, 1px 1px 1px white;
+    padding: 30px;
+    color: white;
+}
+
+@media (max-width: 900px ) {
+    header form {
+        max-width: 70%;
+        text-align: center;
+        margin: 20px auto 10px;
+        padding: 20px;
+    }
+}
+
+header form legend {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+@media (max-width: 900px ) {
+    header form legend {
+        font-size: 25px;
+    }
+}
+
+header form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+header form fieldset input {
+    max-width: 400px;
+    width: 45%;
+    height: 40px;
+    margin-bottom: 3%;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 900px ) {
+    header form fieldset {
+        display: inline-block;
+    }
+
+    header form fieldset input {
+        width: 100%;
+        text-align: center;
+        height: 34px;
+    }
+}
+
+@media (min-width: 800px ) {
+    header form fieldset input {
+        width: 45%;
+    }
+}
+
+header form fieldset input:last-of-type {
+    background-color: rgb(31, 29, 29);
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+header form fieldset input:last-of-type:hover {
+    background-color: rgb(20, 19, 19);
+}
+
+header form fieldset input:focus {
+    outline: 0;
+}
+
+header div {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header p {
+    display: flex;
+    color: white;
+    font-size: 18px;
+}
+
+header p img {
+    max-width: 20px;
+    width: 100%;
+    padding: 3px;
+}
+
+@media (max-width: 900px ) {
+    header h1 {
+        padding-top: 20px;
+    }
+    header div {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    header div p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 400px ) {
+    header div p {
+        font-size: 15px;
+    }
+}
+
+/* main */
+main .increase-section {
+    display:flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+main .increase-section img {
+    max-width: 70vh;
+    width: 100%
+}
+
+main .increase-section div {
+    padding: 60px 0 0 60px;
+}
+
+main .increase-section div h2 {
+    text-transform: uppercase;
+    color: rgb(228, 20, 20);
+    margin-bottom: 10px;
+}
+
+main .increase-section div p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1120px) {
+    main .increase-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .increase-section img {
+        margin-top: 20px;
+    }
+
+    main .increase-section div {
+        padding: 60px 0;
+    }
+
+    main .increase-section div h2 {
+        text-align: center;
+    }
+}
+
+/* section videos */
+
+main .videos-section {
+    background-color: rgb(51, 50, 50);
+    padding: 60px 100px;
+    margin: 0 auto;
+}
+
+main .videos-section h1 {
+    text-align: center;
+    padding: 0 0 25px;
+    text-transform: uppercase;
+    color:rgb(199, 25, 25);
+}
+    
+
+main .videos-section .videos-div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width: 1120px) {
+    main .videos-section .videos-div {
+        flex-wrap: wrap;
+    } 
+}
+
+@media (max-width: 1030px) {
+    main .videos-section {
+        padding: 60px 0;
+    }
+}
+
+main .videos-section .videos-div div {
+    color:white;
+    text-align: center;
+}
+
+main .videos-section .videos-div div img {
+    max-width: 400px;
+    width: 100%;
+}
+
+@media (max-width: 830px) {
+    main .videos-section .videos-div div {
+       margin: 0 25px;
+    }
+    
+    main .videos-section .videos-div div img {
+    max-width: 445.2px;
+    width: 100%;
+    }
+
+}
+
+/* second increase section */
+main .increase-section.second div {
+    padding: 60px 60px 0 0 ;
+}
+
+@media (max-width: 1120px) {
+        main .increase-section.second div {
+        padding: 60px 0 60px 0 ;
+    }     
+    main .increase-section.second img {
+        margin-bottom: 20px;
+    }
+}
+
+/* section quotes */
+main .videos-section.quotes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: justify;
+    color: white;
+}
+
+@media (max-width: 1120px) {
+    main .videos-section.quotes{
+        flex-wrap: wrap;
+    } 
+}
+
+main .videos-section.quotes div {
+    max-width: 445.2px;
+    width: 100%;
+    margin: 0 25px;
+}
+
+main .videos-section.quotes div p:first-of-type {
+    margin: 20px 0;
+}
+
+main .videos-section.quotes div p:last-of-type {
+    color: rgb(180, 16, 16);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* teste de menu responsivo  */
+
+@media (max-width: 501px) {
+
+    header {
+        overflow: hidden;
+    }
+
+    header nav label {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    header nav label input[type="checkbox"]:checked ul:nth-child(2) {
+        top: 0;
+        right: 0;
+    }
+
+    header nav label {
+        display: inline-block;
+        background-color: rgba( 255,255,255,0.8);
+        padding: 6px 15px;
+        border-radius: 3px;
+    }
+
+    header nav {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        position: relative;
+    }
+
+    header nav ul { 
+        position: absolute;
+        top: 0;
+        right: -250px;
+        width: 30vh;
+        height: 100vh;
+        padding: 50px 50px 50px 30px;
+        background-color: rgba( 255,255,255,1);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        transition: .5s linear;
+    }
+
+    header nav ul li {
+        list-style-type:square;
+    }
+
+    header nav ul li a {
+        color: black;
+    }
+}
